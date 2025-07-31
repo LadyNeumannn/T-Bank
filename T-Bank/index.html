@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    
+</head>
+<body>
+    <div class="actions">
+        <button id="downloadEditedPdfButton" data-pdf-src="_Resume.pdf">
+            Скачать Резюме (PDF)
+            <span class="ripple-effect"></span>
+        </button>
+    </div>
+
+    <div class="resume-layout" id="resumeContent">
+        <div class="profile-card section-block">
+            <div class="profile-picture">
+              <img src="https://i.ibb.co/8DG1SJSj/photo-2025-07-30-15-16-27.jpg" alt="photo" >
+            </div>
+            <div class="profile-info">
+                <p contenteditable="true" class="greeting" data-placeholder="Hello 👋 I'm">Hello 👋 I'm</p>
+                <h1 contenteditable="true" class="name" data-placeholder="Ваше Имя">Karthik SR</h1>
+                <p contenteditable="true" class="role" data-placeholder="Ваша Должность">UX/UI Designer</p>
+            </div>
+        </div>
+
+        <section class="languages-section section-block">
+            <h2 id="languages-title" contenteditable="true">Languages</h2>
+            <ul>
+                <li class="language-item">
+                    <span class="lang-name" contenteditable="true">English</span>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 100%;"></div>
+                    </div>
+                </li>
+                <li class="language-item">
+                    <span class="lang-name" contenteditable="true">Malayalam</span>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 70%;"></div>
+                    </div>
+                </li>
+                <li class="language-item">
+                    <span class="lang-name" contenteditable="true">Hindi</span>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 50%;"></div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="experience-section section-block">
+            <h2 id="experience-title" contenteditable="true">Experience</h2>
+            <div class="job-entry most-recent" id="job-1">
+                <div class="job-header">
+                    <span class="job-dates" id="job-1-dates" contenteditable="true">Jun. 2023 - Present</span>
+                    <span class="tag" id="job-1-tag" contenteditable="true">most recent</span>
+                </div>
+                <h3 class="job-title" id="job-1-title" contenteditable="true">Marketing Manager</h3>
+                <p class="job-details" id="job-1-details" contenteditable="true">Perumbavoor | Full-time</p>
+                <ul class="job-responsibilities" id="job-1-responsibilities">
+                    <li contenteditable="true">Strategy development and planning of campaigns that promote the business and generate genuine traffic.</li>
+                    <li contenteditable="true">SEO Content Creation for Blogs, Website, Social media.</li>
+                </ul>
+            </div>
+            <div class="job-entry" id="job-2">
+                <div class="job-header">
+                    <span class="job-dates" id="job-2-dates" contenteditable="true">2017 - Present</span>
+                </div>
+                <h3 class="job-title" id="job-2-title" contenteditable="true">Graphic / Web designer</h3>
+                <p class="job-details" id="job-2-details" contenteditable="true">Freelance</p>
+                <ul class="job-responsibilities" id="job-2-responsibilities">
+                    <li contenteditable="true">Development of internal projects from scratch, product design of brands.</li>
+                    <li contenteditable="true">Landing page, webapps and hybrid apps.</li>
+                    <li contenteditable="true">Coordinating with outside agencies, art services, web designer, marketing, printers, and colleagues as necessary.</li>
+                </ul>
+            </div>
+            <div class="job-entry" id="job-3">
+                <div class="job-header">
+                    <span class="job-dates" id="job-3-dates" contenteditable="true">Sep. 2021 - Jun. 2023</span>
+                </div>
+                <h3 class="job-title" id="job-3-title" contenteditable="true">Legal Assistant</h3>
+                <p class="job-details" id="job-3-details" contenteditable="true">Low Firm | Intern</p>
+                <ul class="job-responsibilities" id="job-3-responsibilities">
+                    <li contenteditable="true">Provide administrative support to lawyer and enhance office effectiveness</li>
+                    <li contenteditable="true">Handle communication with clients, witnesses etc.</li>
+                    <li contenteditable="true">Repare case briefs and summarize depositions, interrogatories and testimony.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="tools-section section-block">
+            <h2 id="tools-title" contenteditable="true">Tools</h2>
+            <div class="tool-category design">
+                <h4>Design</h4>
+                <div class="tool-icons">
+                    <div class="tool-icon-wrapper" title="Figma">
+                        <svg class="tool-svg" width="11" height="15" viewBox="0 0 11 15" fill="none">
+                            <path fill="#1ABCFE" d="M5.62 7.5C5.62 6.11929 6.73928 5 8.12 5C9.50071 5 10.62 6.11929 10.62 7.5C10.62 8.88071 9.50071 10 8.12 10C6.73928 10 5.62 8.88071 5.62 7.5Z"/>
+                            <path fill="#0ACF83" d="M0.619995 12.5C0.619995 11.1193 1.73928 10 3.12 10H5.62V12.5C5.62 13.8807 4.50071 15 3.12 15C1.73928 15 0.619995 13.8807 0.619995 12.5Z"/>
+                            <path fill="#FF7262" d="M5.62 0L5.62 5H8.12C9.50071 5 10.62 3.88071 10.62 2.5C10.62 1.11929 9.50071 0 8.12 0L5.62 0Z"/>
+                            <path fill="#F24E1E" d="M0.619995 2.5C0.619995 3.88071 1.73928 5 3.12 5L5.62 5L5.62 0L3.12 0C1.73928 0 0.619995 1.11929 0.619995 2.5Z"/>
+                            <path fill="#A259FF" d="M0.619995 7.5C0.619995 8.88071 1.73928 10 3.12 10H5.62L5.62 5L3.12 5C1.73928 5 0.619995 6.11929 0.619995 7.5Z"/>
+                        </svg>
+                    </div>
+                    <div class="tool-icon-wrapper" title="Checkbox">
+                        <svg class="tool-svg" viewBox="0 0 24 24" fill="#4a6cf7">
+                            <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM10.5 17.5L7 13.9L8.4 12.5L10.5 14.6L15.6 9.5L17 10.9L10.5 17.5Z"/>
+                        </svg>
+                    </div>
+                    <div class="tool-icon-wrapper" title="Settings">
+                        <svg class="tool-svg" viewBox="0 0 24 24" fill="#4a6cf7">
+                            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM17.2 14.2C17.2 15.63 16.03 16.8 14.6 16.8C13.17 16.8 12 15.63 12 14.2C12 12.77 13.17 11.6 14.6 11.6C16.03 11.6 17.2 12.77 17.2 14.2ZM10 10.4C8.9 10.4 8 9.5 8 8.4C8 7.3 8.9 6.4 10 6.4C11.1 6.4 12 7.3 12 8.4C12 9.5 11.1 10.4 10 10.4Z"/>
+                        </svg>
+                    </div>
+                    <div class="tool-icon-wrapper" title="Info">
+                        <svg class="tool-svg" viewBox="0 0 24 24" fill="#4a6cf7">
+                            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 16V8C13 7.45 12.55 7 12 7C11.45 7 11 7.45 11 8V16C11 16.55 11.45 17 12 17C12.55 17 13 16.55 13 16Z"/>
+                        </svg>
+                    </div>
+                    <div class="tool-icon-wrapper" title="Grid">
+                        <svg class="tool-svg" viewBox="0 0 24 24" fill="#4a6cf7">
+                            <path d="M18 3H6C4.9 3 4 3.9 4 5V19C4 20.1 4.9 21 6 21H18C19.1 21 20 20.1 20 19V5C20 3.9 19.1 3 18 3ZM15 15L12.5 12.5L15 10L17 12L15 15ZM9 15V9H15V15H9Z"/>
+                        </svg>
+                    </div>
+                    <div class="tool-icon-wrapper" title="Custom Design Tool">
+                        <svg class="tool-svg" width="15" height="15" viewBox="0 0 15 15" fill="#4a6cf7">
+                            <path d="M0 5.3417C0 3.47194 0 2.53705 0.363881 1.82289C0.683963 1.1947 1.1947 0.683963 1.82289 0.363881C2.53705 0 3.47194 0 5.3417 0H9.4183C11.2881 0 12.223 0 12.9371 0.363881C13.5653 0.683963 14.076 1.1947 14.3961 1.82289C14.76 2.53705 14.76 3.47194 14.76 5.3417V9.4183C14.76 11.2881 14.76 12.223 14.3961 12.9371C14.076 13.5653 13.5653 14.076 12.9371 14.3961C12.223 14.76 11.2881 14.76 9.4183 14.76H5.3417C3.47194 14.76 2.53705 14.76 1.82289 14.3961C1.1947 14.076 0.683963 13.5653 0.363881 12.9371C0 12.223 0 11.2881 0 9.4183V5.3417Z" fill="#00005B"/>
+                            <path d="M3.16286 10.4352V3.79963C3.16286 3.75449 3.18136 3.72869 3.22454 3.72869C3.86198 3.72869 4.49911 3.69 5.13674 3.69C6.17131 3.69 7.2916 4.05058 7.68427 5.15383C7.77678 5.42467 7.82612 5.70195 7.82612 5.99214C7.82612 6.54669 7.70277 7.00452 7.45601 7.36566C6.76683 8.3744 5.57222 8.35875 4.50138 8.35875V10.4287C4.50976 10.49 4.45852 10.519 4.40886 10.519H3.23688C3.18753 10.519 3.16286 10.4932 3.16286 10.4352ZM4.50755 4.97328V7.13994C4.93216 7.17168 5.37644 7.1751 5.78439 7.03678C6.23478 6.90436 6.48143 6.507 6.48143 6.03083C6.49398 5.62509 6.27706 5.23574 5.9078 5.08936C5.50474 4.91851 4.94265 4.90828 4.50755 4.97328Z" fill="#9999FF"/>
+                            <path d="M8.66228 5.38312H9.74482C9.80449 5.3837 9.85811 5.42677 9.87387 5.48697C9.9532 5.6711 9.96301 5.89319 9.96327 6.09197C10.1489 5.86599 10.3728 5.67774 10.6237 5.53652C10.8928 5.37738 11.1978 5.29667 11.507 5.30295C11.5583 5.29525 11.6037 5.34275 11.5964 5.39636V6.65259C11.5964 6.70114 11.5631 6.72528 11.497 6.72528C11.0389 6.69223 10.3255 6.80541 9.99258 7.18211V10.4485C9.99258 10.5108 9.96612 10.542 9.91314 10.542H8.75169C8.69465 10.5505 8.64431 10.4968 8.65237 10.4381V6.89139C8.65237 6.41617 8.66223 5.92661 8.5928 5.45582C8.5821 5.41249 8.62175 5.37221 8.66228 5.38312Z" fill="#9999FF"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="tool-category no-code">
+                <h4>No-code</h4>
+                <div class="tool-icons">
+                    <div class="tool-icon-wrapper" title="No-code Tool 1">
+                        <svg class="tool-svg" viewBox="0 0 24 24" fill="#10b981">
+                            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4ZM10 17H14V19H10V17ZM10 5H14V15H10V5Z"/>
+                        </svg>
+                    </div>
+                    <div class="tool-icon-wrapper" title="No-code Tool 2">
+                        <svg class="tool-svg" viewBox="0 0 24 24" fill="#10b981">
+                            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4ZM12 6C9.79 6 8 7.79 8 10C8 12.21 9.79 14 12 14C14.21 14 16 12.21 16 10C16 7.79 14.21 6 12 6Z"/>
+                        </svg>
+                    </div>
+                    <div class="tool-icon-wrapper" title="No-code Tool 3">
+                        <svg class="tool-svg" viewBox="0 0 24 24" fill="#10b981">
+                            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM11.12 18.06C8.83 17.81 7.02 16.29 6.2 14.16L9.08 13.08C9.4 13.92 10.32 14.54 11.36 14.54C12.38 14.54 13.29 13.92 13.62 13.08L16.5 14.16C15.68 16.29 13.87 17.81 11.12 18.06ZM12 10.54C10.63 10.54 9.5 9.41 9.5 8.04C9.5 6.67 10.63 5.54 12 5.54C13.37 5.54 14.5 6.67 14.5 8.04C14.5 9.41 13.37 10.54 12 10.54Z"/>
+                        </svg>
+                    </div>
+                    <div class="tool-icon-wrapper" title="Webflow">
+                        <svg class="tool-svg" width="20" height="21" viewBox="0 0 20 21" fill="#10b981">
+                            <g clip-path="url(#clip0_0_101)">
+                                <path d="M10 20.4822C15.5228 20.4822 20 16.0051 20 10.4822C20 4.95937 15.5228 0.482216 10 0.482216C4.47715 0.482216 0 4.95937 0 10.4822C0 16.0051 4.47715 20.4822 10 20.4822Z" fill="#FF4A00"/>
+                                <path d="M11.25 10.4844C11.2501 10.8446 11.185 11.2019 11.058 11.5391C10.7206 11.6666 10.3629 11.732 10.0021 11.7322H9.99785C9.6376 11.7322 9.2803 11.6672 8.94316 11.5402C8.81564 11.2028 8.7502 10.8451 8.75 10.4844V10.4801C8.75004 10.1198 8.81508 9.76253 8.94199 9.42538C9.27942 9.29785 9.63713 9.23241 9.99785 9.23222H10.0021C10.3628 9.23207 10.7205 9.29718 11.058 9.4244C11.185 9.76153 11.2501 10.1188 11.25 10.4791V10.4834V10.4844ZM14.9305 9.64882H12.0117L14.0756 7.58515C13.9135 7.3578 13.7327 7.14437 13.5352 6.94706C13.3378 6.74978 13.1244 6.56927 12.8971 6.40741L10.8334 8.4705V5.55175C10.5589 5.50564 10.2811 5.48238 10.0027 5.48222H9.99746C9.71913 5.48238 9.44129 5.50564 9.1668 5.55175V8.4705L7.10293 6.40663C6.87559 6.56874 6.66216 6.74951 6.46484 6.94706C6.26764 7.14428 6.0872 7.35758 5.92539 7.58475L7.98828 9.64882H5.06953C5.06953 9.64882 5 10.1971 5 10.4805V10.484C5.00011 10.7626 5.02337 11.0408 5.06953 11.3156H7.98828L5.92441 13.3793C6.24896 13.8349 6.64727 14.2333 7.10293 14.5578L9.1666 12.4939V15.4127C9.44083 15.4587 9.71841 15.482 9.99648 15.4822H10.0037C10.2817 15.482 10.5592 15.4587 10.8334 15.4127V12.4939L12.8971 14.5578C13.1244 14.3957 13.3378 14.2149 13.5352 14.0174C13.7325 13.82 13.9131 13.6066 14.0750 13.3793L12.0117 11.3156H14.9305C14.9765 11.0414 14.9998 10.7638 15 10.4857V10.4785C14.9998 10.2005 14.9765 9.92299 14.9305 9.64882Z" fill="white"/>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="tool-category ai">
+                <h4>Artificial Intelligence</h4>
+                <div class="tool-icons">
+                    <div class="tool-icon-wrapper" title="AI Tool 1">
+                        <svg class="tool-svg" viewBox="0 0 24 24" fill="#7c3aed">
+                            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM16 12C16 13.1 15.1 14 14 14H10C8.9 14 8 13.1 8 12V8C8 6.9 8.9 6 10 6H14C15.1 6 16 6.9 16 8V12ZM12 16C12 17.1 11.1 18 10 18H6C4.9 18 4 17.1 4 16V12C4 10.9 4.9 10 6 10H10C11.1 10 12 10.9 12 12V16ZM18 12C18 13.1 17.1 14 16 14H12C10.9 14 10 13.1 10 12V8C10 6.9 10.9 6 12 6H16C17.1 6 18 6.9 18 8V12ZM18 16C18 17.1 17.1 18 16 18H12C10.9 18 10 17.1 10 16V12C10 10.9 10.9 10 12 10H16C17.1 10 18 10.9 18 12V16Z"/>
+                        </svg>
+                    </div>
+                    <div class="tool-icon-wrapper" title="AI Tool 2">
+                        <svg class="tool-svg" viewBox="0 0 24 24" fill="#7c3aed">
+                            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 17H11V15H13V17ZM13 13H11V7H13V13Z"/>
+                        </svg>
+                    </div>
+                    <div class="tool-icon-wrapper" title="Custom AI Tool 1">
+                        <svg class="tool-svg" width="20" height="20" viewBox="0 0 20 20" fill="#7c3aed">
+                            <rect x="0.5" y="0.0537109" width="19" height="19" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <div class="tool-icon-wrapper" title="Custom AI Tool 2">
+                        <svg class="tool-svg" width="19" height="20" viewBox="0 0 19 20" fill="#7c3aed">
+                            <rect x="0.5" y="0.0537109" width="18" height="19" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <div class="tool-icon-wrapper" title="AI Tool 3">
+                        <svg class="tool-svg" width="19" height="20" viewBox="0 0 19 20" fill="#7c3aed">
+                            <rect y="0.0537109" width="19" height="19" fill="currentColor"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+          <section class="education-section section-block">
+            <h2 id="education-title" contenteditable="true">Education</h2>
+            <div class="education-entry">
+                <div class="edu-year" contenteditable="true">2023</div>
+                <div class="edu-details">
+                    <p contenteditable="true" class="edu-degree">UI/UX</p>
+                    <p contenteditable="true" class="edu-program">#UX #UI #research #designsystem #UI #wireframing #figma #ux</p>
+                    <p contenteditable="true" class="edu-uni">Coursera</p>
+                </div>
+            </div>
+            <div class="education-entry">
+                <div class="edu-year" contenteditable="true">2017 - 2022</div>
+                <div class="edu-details">
+                    <p contenteditable="true" class="edu-degree">Law</p>
+                    <p contenteditable="true" class="edu-program">#Law #legalstudies #contracts #internationallaws</p>
+                    <p contenteditable="true" class="edu-uni">University of Kerala</p>
+                </div>
+            </div>
+            <div class="education-entry">
+                <div class="edu-year" contenteditable="true">2017</div>
+                <div class="edu-details">
+                    <p contenteditable="true" class="edu-degree">Graphic design</p>
+                    <p contenteditable="true" class="edu-program">#branding #web #illustration #adobe</p>
+                    <p contenteditable="true" class="edu-uni">Coursera</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="interests-section section-block">
+            <h2 id="interests-title" contenteditable="true">Interests</h2>
+            <div class="interest-tags">
+                <span contenteditable="true" class="tag-item">branding</span>
+                <span contenteditable="true" class="tag-item">design</span>
+                <span contenteditable="true" class="tag-item">photography</span>
+                <span contenteditable="true" class="tag-item">artificial intelligence</span>
+                <span contenteditable="true" class="tag-item">illustration</span>
+                <span contenteditable="true" class="tag-item">typography</span>
+                <span contenteditable="true" class="tag-item">social networks</span>
+                <span contenteditable="true" class="tag-item">research</span>
+                <span contenteditable="true" class="tag-item">dron pilot</span>
+                <span contenteditable="true" class="tag-item">games</span>
+            </div>
+        </section>
+
+        <section class="letschat-section section-block">
+            <p contenteditable="true" class="chat-heading">Let's chat! I'm ready to work on exciting projects</p>
+            <a href="mailto:srkarthik.designscape@gmail.com" class="chat-email" contenteditable="true">srkarthik.designscape@gmail.com</a>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
